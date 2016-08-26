@@ -8,12 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
     <script src="https://use.fontawesome.com/39aec73398.js"></script>
     <script src="/js/app.js"></script>
-    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+    <script src="/js/controllers/controllers.js"></script>
+    <script src="/js/services/services.js"></script>
+    <!-- <link rel="stylesheet" href="http://s.mlcdn.co/animate.css"> -->
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <base href="/">
   </head>
-  <body>
+  <body ng-controller="mainController">
     <!-- <header>
       <nav>
         <div class="logo">
@@ -85,11 +87,11 @@
         <div class="dots">
           <div class="circle"></div><div class="circle"></div><div class="circle"></div>
         </div>
-        <p><form class="contact-box" action="index.html" method="post">
-          <input type="textarea" name="name" value="" placeholder="Your Name" required>
-          <input type="textarea" name="email" value="" placeholder="Your Email" required>
-          <input type="textarea" id="message" name="message" value="" placeholder="Your Message">
-          <input type="submit" name="name" value="Submit">
+        <p><form class="contact-box" method="post">
+          <input type="textarea" ng-model="view.contact.name" placeholder="Your Name" required>
+          <input type="textarea" ng-model="view.contact.email" placeholder="Your Email" required>
+          <input type="textarea" id="message" ng-model="view.contact.message" placeholder="Your Message">
+          <input type="submit" ng-click="view.printInfo()" name="name" value="Submit">
         </form>
 
         <p>
