@@ -1,7 +1,12 @@
 body {
 	margin: 0px;
-  font: 14px;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	padding: 0px;
+	background: #F2F2F2;
+	color: #414141;
+	font-size: 12px;
+	line-height: 175%;
+	font-family: 'Lucide Grande', sans-serif;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 2s; /* Firefox < 16 */
 	-ms-animation: fadein 2s; /* Internet Explorer */
 	-o-animation: fadein 2s; /* Opera < 12.1 */
@@ -37,63 +42,129 @@ body {
   to   { opacity: 1; }
 }
 
-.square a {
-	color: white;
-	text-decoration: underline;
+header {
+	margin: 10px;
+	font-style: italic;
 }
 
-.square a:hover {
-	color: #434343;
+nav .logo{
+	display: inline-block;
+	/*float: left;*/
 }
 
-.jumbo {
-	height: 100vh;
+.links{
+	display: inline-block;
+	/*float: right;*/
 }
 
-.smoke {
-	background-color: #434343;
-	opacity: 0.2;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: 100;
+.nav-link a{
+	margin-right: 5px;
+	text-decoration: none;
+	color: #414141;
 }
 
-.grid {
-	height: 50vh;
-	background-color: #000;
+.banner {
+	font-family: 'Raleway 400', sans-serif;
+	height: 300px;
+	background-image: url('/images/Flower_Pattern.png');
+	background-size: 50%;
+	border-bottom: 2px #414141 solid;
 }
 
-.square {
+.initials {
+	padding-top: 11%;
+	font-size: 24px;
+	text-align: center;
+}
+
+section {
+	width: 25%;
+	margin: 0 auto;
+	padding: 10px;
+	overflow: auto;
+}
+
+section .heading{
+	font-family: 'Raleway', sans-serif;
+	/*color: #CE6643;*/
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.dots {
+	text-align: center;
+}
+
+.circle {
+	display: inline-block;
+	background-color: #CE6643;
+	margin: 0 20px;
+	/*border: 1px solid black;*/
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+}
+
+section #contact {
+	text-align: center;
+}
+
+.link-in-section {
+	text-align: right;
+}
+
+section a {
+	color: #414141;
+}
+
+section .link-in-section a {
+	text-align: right;
+	text-decoration: none;
+	color: #CE6643;
+	font-style: oblique;
+	font-size: 9px;
+}
+
+hr {
+	width: 50%;
+	/*border-width: 2px;*/
+}
+
+.project-descrip {
 	display: inline-block;
 	width: 50%;
-	height: 50vh;
-	line-height: 40vh;
-	padding: 10px;
-	background-color: pink;
+}
+
+.project-image {
+	display: inline-block;
+	float: right;
+	width: 50%;
+}
+
+.project-image img {
+	margin: 5px;
+}
+
+section#contact a{
+	margin: 0 10px;
+}
+
+input {
+	padding: 5px;
+	width: 95%;
+}
+
+input#message {
+	height: 100px;
+}
+
+footer {
+	background-color: #CE6643;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-style: italic;
-	font-weight: 900;
-	opacity: 0;
-	
-	transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -webkit-transition: opacity 1s ease-in-out;
 }
 
-.square:hover {
-	opacity: 1;
+footer img {
+	padding: 5px;
+	width: 30px;
 }
-
-.square p.blurb {
-	color: white;
-	font-size: 68px;
-}
-
-
-
-
-
-
-
