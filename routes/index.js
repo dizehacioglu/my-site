@@ -5,7 +5,6 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 
 router.post('/', function(req,res,next){
-  console.log(process.env.PASS);
   var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
@@ -16,11 +15,8 @@ router.post('/', function(req,res,next){
 
   transporter.sendMail(req.body, function(err, info){
     if(err) console.log(err);
-    else {
-      console.log('message sent');
-    }
   })
-  console.log(req.body);
+
   res.redirect('/')
 })
 

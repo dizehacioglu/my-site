@@ -6,4 +6,10 @@ app.config(function($routeProvider, $locationProvider){
     .when('/', {
       templateUrl: 'partials/main.html'
     })
+    .when('/work', {
+      templateUrl: 'partials/work.html'
+    })
+    .when('/contact', {
+      templateUrl: 'partials/contact.html'
+    })
 })
