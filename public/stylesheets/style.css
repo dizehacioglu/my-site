@@ -57,13 +57,9 @@ header {
 	font-style: italic;
 }
 
-nav .logo{
-	display: inline-block;
-	/*float: left;*/
-}
 
 .links{
-	display: inline-block;
+	display: none;
 	float: right;
 	margin-top: 230px;
 }
@@ -98,7 +94,7 @@ nav .logo{
 	border-bottom: 2px #414141 solid;
 }
 
-.initials {
+.smokeshadow {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -112,6 +108,21 @@ nav .logo{
 	position: absolute;
 	/*left: 44.5%;*/
 	/*top: 6.5%;*/
+}
+
+.initials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(242,242,242,0.7);
+	/*border: 1px solid black;*/
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.initials h1 {
+	font-weight: initial;
 }
 
 main {
@@ -216,7 +227,12 @@ footer img {
 }
 
 /* MEDIA QUERIES */
+
+/*For portrait tablets and portrait phone screens*/
 @media only screen and (min-width : 480px)  {
+	.links {
+		display: inline-block;
+	}
 	section {
 		width: 55%;
 		/*display: none;*/
@@ -225,6 +241,9 @@ footer img {
 
 /*For landspace tablets and desktop screens*/
 @media only screen and (min-width : 1024px) {
+	.links {
+		display: inline-block;
+	}
 	section {
 		width: 25%;
 	}
