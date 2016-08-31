@@ -214,3 +214,18 @@ footer img {
 	padding: 5px;
 	width: 30px;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width : 480px)  {
+	section {
+		width: 55%;
+		/*display: none;*/
+	}
+}
+
+/*For landspace tablets and desktop screens*/
+@media only screen and (min-width : 1024px) {
+	section {
+		width: 25%;
+	}
+}
