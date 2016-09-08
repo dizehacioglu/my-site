@@ -6,6 +6,9 @@ app.config(function($routeProvider, $locationProvider){
     .when('/', {
       templateUrl: 'partials/main.html'
     })
+    .when('/education', {
+      templateUrl: 'partials/education.html'
+    })
     .when('/work', {
       templateUrl: 'partials/work.html'
     })
